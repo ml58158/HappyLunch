@@ -14,6 +14,8 @@
 		C4E331461AB9D6BE00865491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E331451AB9D6BE00865491 /* Images.xcassets */; };
 		C4E331491AB9D6BE00865491 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E331471AB9D6BE00865491 /* LaunchScreen.xib */; };
 		C4E331551AB9D6BE00865491 /* HappyLunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E331541AB9D6BE00865491 /* HappyLunchTests.m */; };
+		C4E331601AB9DC6B00865491 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E3315F1AB9DC6B00865491 /* FoodTableViewCell.m */; };
+		C4EB4CA41AB9E8F700B7CF4B /* DrinkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB4CA31AB9E8F700B7CF4B /* DrinkTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		C4E3314E1AB9D6BE00865491 /* HappyLunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyLunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E331531AB9D6BE00865491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E331541AB9D6BE00865491 /* HappyLunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyLunchTests.m; sourceTree = "<group>"; };
+		C4E3315E1AB9DC6B00865491 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
+		C4E3315F1AB9DC6B00865491 /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
+		C4EB4CA21AB9E8F700B7CF4B /* DrinkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkTableViewCell.h; sourceTree = "<group>"; };
+		C4EB4CA31AB9E8F700B7CF4B /* DrinkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				C4E3313D1AB9D6BE00865491 /* AppDelegate.m */,
 				C4E3313F1AB9D6BE00865491 /* ViewController.h */,
 				C4E331401AB9D6BE00865491 /* ViewController.m */,
+				C4E3315E1AB9DC6B00865491 /* FoodTableViewCell.h */,
+				C4E3315F1AB9DC6B00865491 /* FoodTableViewCell.m */,
 				C4E331421AB9D6BE00865491 /* Main.storyboard */,
+				C4EB4CA21AB9E8F700B7CF4B /* DrinkTableViewCell.h */,
+				C4EB4CA31AB9E8F700B7CF4B /* DrinkTableViewCell.m */,
 				C4E331451AB9D6BE00865491 /* Images.xcassets */,
 				C4E331471AB9D6BE00865491 /* LaunchScreen.xib */,
 				C4E331381AB9D6BE00865491 /* Supporting Files */,
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E331411AB9D6BE00865491 /* ViewController.m in Sources */,
+				C4EB4CA41AB9E8F700B7CF4B /* DrinkTableViewCell.m in Sources */,
+				C4E331601AB9DC6B00865491 /* FoodTableViewCell.m in Sources */,
 				C4E3313E1AB9D6BE00865491 /* AppDelegate.m in Sources */,
 				C4E3313B1AB9D6BE00865491 /* main.m in Sources */,
 			);
@@ -412,6 +424,7 @@
 				C4E3315A1AB9D6BE00865491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4E3315B1AB9D6BE00865491 /* Build configuration list for PBXNativeTarget "HappyLunchTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				C4E3315D1AB9D6BE00865491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
