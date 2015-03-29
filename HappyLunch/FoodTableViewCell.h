@@ -17,7 +17,7 @@
 
 @interface FoodTableViewCell : UITableViewCell
 
-@property (nonatomic, assign) id <foodTableViewCellDelegate>delgate;
+@property (nonatomic, assign) id <foodTableViewCellDelegate>delegate;
 
 
 @end

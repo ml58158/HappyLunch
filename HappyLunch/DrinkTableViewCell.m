@@ -10,13 +10,9 @@
 
 @implementation DrinkTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
+- (IBAction)onDrinkItemTapped:(id)sender {
 
--(void)setSelected:(BOOL)selected animated:(BOOL)animated {
-
-    [super setSelected:selected animated:animated];
+    [self.delegate drinkTableViewCell:self didTapButton:sender];
 }
 
 @end

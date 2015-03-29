@@ -16,8 +16,7 @@
 
 - (IBAction)onFoodItemTapped:(id)sender {
 
-    [self.delgate foodTableViewCell:self didTapButton:sender];
+    [self.delegate foodTableViewCell:self didTapButton:sender];
 }
-
 
 @end

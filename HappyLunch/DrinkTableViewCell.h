@@ -20,5 +20,4 @@
 
 @property (nonatomic, assign) id <drinkTableViewCellDelegate> delegate;
 
-
 @end

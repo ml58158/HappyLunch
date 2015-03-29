@@ -13,7 +13,6 @@
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate,foodTableViewCellDelegate, drinkTableViewCellDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *selectedFoodImageView;
-
 @property (strong, nonatomic) IBOutlet UIImageView *selectedDrinkImageView;
 
 
@@ -21,35 +20,40 @@
 
 @implementation ViewController
 
-NSString * const kFoodCell = @"FoodCell";
-NSString * const kDrinkCell = @"DrinkCell";
+static NSString * const kFoodCell = @"FoodCell";
+static NSString * const kDrinkCell = @"DrinkCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{   if (indexPath ==0){
-    FoodTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFoodCell];
-    cell.delgate = self;
-    return cell;
-} else {
-    DrinkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDrinkCell];
-    cell.delegate = self;
-    return cell;
-}
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
-
 }
 
--(void)foodTableViewCell:(id)cell didTapButton:(UIButton *)button {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    if (indexPath.row == 0) {
+        FoodTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFoodCell];
+        cell.delegate = self;
+        return cell;
+    } else {
+        DrinkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDrinkCell];
+        cell.delegate = self;
+        return cell;
+    }
+}
 
+- (void)foodTableViewCell:(id)cell didTapButton:(UIButton *)button {
     self.selectedFoodImageView.image = button.imageView.image;
+
 }
+
+- (void)drinkTableViewCell:(id)cell didTapButton:(UIButton *)button {
+    self.selectedDrinkImageView.image = button.imageView.image;
+}
+
 
 @end
